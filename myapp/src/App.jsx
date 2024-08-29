@@ -18,6 +18,7 @@ import Mapping2 from './component/24-08/Mapping2';
 import TerneryOperator from './component/25-08/TernaryOperator';
 import Todo from './component/25-08/Todo';
 import { StyledComponents } from './component/25-08/StyledComponents';
+import DynamicStyling from './component/29-08/DynamicStyling';
 
 
 
@@ -28,12 +29,12 @@ function App() {
     setCounter(counter + 1)
   }
   return (
-    <>
+    <div className='App'>
     <Navbar/>
     <Routes>
-      <Route path='/'element ={<Home/>}></Route>
-      <Route path='/login'element ={<Login/>}></Route>
-      <Route path='*'element ={<Not_found/>}></Route>  
+      <Route path='/' element ={<Home/>}></Route>
+      <Route path='/login' element ={<Login/>}></Route>
+      <Route path='*' element ={<Not_found/>}></Route>  
       <Route path='/register' element ={<Register/>}></Route>    
       <Route path='/counter' element = {<Counter/>}></Route>
       <Route path='/useeffect1' element = {<UseEffect1/>}></Route>
@@ -51,8 +52,9 @@ function App() {
       <Route path='/ternaryoperator' element={<TerneryOperator/>}></Route>
       <Route path='/todo' element={<Todo/>}></Route>
       <Route path='/styled-components' element={<StyledComponents/>}></Route>
+      <Route path='/dynamic-styling' element={<DynamicStyling/>}></Route>
     </Routes>
-    </>
+    </div>
   );
 }
 
