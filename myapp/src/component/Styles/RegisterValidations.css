@@ -1,0 +1,35 @@
+.parent {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+.validationSection {
+  border: 1px solid black;
+  width: 30%;
+  padding: 20px;
+  margin-top: 40px;
+  background-image: url(https://t3.ftcdn.net/jpg/00/88/98/18/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg);
+}
+
+.validationSection label {
+  font-weight: 700;
+}
+.validationSection input {
+  /* font-family: "Courier New", Courier, monospace; */
+  border: 1px solid black;
+}
+.validationSection p {
+  color: red;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.validationSection button {
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  background-color: rgb(207, 204, 204);
+}
