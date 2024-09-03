@@ -111,7 +111,7 @@ function Login() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    // if (userData.email && userData.password) {
+    if (userData.email && userData.password) {
       try {
      
         const response = {
@@ -125,9 +125,9 @@ function Login() {
         console.log(error);
         toast.error(error);
       }
-    // } else {
-    //   toast.error("All fields are required.");
-    // }
+    } else {
+      toast.error("All fields are required.");
+    }
   }
 
   return (

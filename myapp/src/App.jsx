@@ -77,6 +77,7 @@ function App() {
           element={<RegistervalidationUseEffect />}
         ></Route>
         <Route path="/use-reducer" element={<UseReducer />}></Route>
+       
       </Routes>
     </div>
   );
