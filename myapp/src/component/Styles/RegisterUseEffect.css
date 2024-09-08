@@ -2,12 +2,13 @@
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
+  background-image: none;
 }
 .validationSection {
   border: 1px solid black;
   width: 30%;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 180px;
   /* background-image: url(https://t3.ftcdn.net/jpg/00/88/98/18/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg); */
 }
 

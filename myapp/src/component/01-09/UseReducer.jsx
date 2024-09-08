@@ -17,7 +17,8 @@ function Reducer(state,action)
 
 const InitialState = {counter : 1000}
 const UseReducer = () => {
-  const[state,dispatch] = useReducer(Reducer,InitialState);
+  const[state,dispatch] = useReducer(Reducer,InitialState)
+  // console.log(state)
   function Increment(){
     dispatch ({type: "INCREMENT"});
   }

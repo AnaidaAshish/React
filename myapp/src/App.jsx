@@ -22,11 +22,8 @@ import Registervalidation from "./component/31-08/Registervalidation";
 import Register from "./component/Register";
 import RegistervalidationUseEffect from "./component/31-08/RegistervalidationUseEffect";
 import UseReducer from "./component/01-09/UseReducer";
-import { AuthContext } from "./component/context/AuthContext";
 import UseContext from "./component/03-09/UseContext";
-
-
-
+import UseMemo from "./component/05-09(Context)/UseMemo";
 
 function App() {
   const [productName, setproductName] = useState([
@@ -43,7 +40,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<Not_found />}></Route>
         <Route path="/register" element={<Register />}></Route>
@@ -82,12 +79,8 @@ function App() {
           element={<RegistervalidationUseEffect />}
         ></Route>
         <Route path="/use-reducer" element={<UseReducer />}></Route>
-        <Route path="/use-context" element={<UseContext/>}></Route>
-        <Route path="/auth-context" element={<AuthContext/>}></Route>
-      
-        
-        
-       
+        <Route path="/use-context" element={<UseContext />}></Route>
+        <Route path="/use-memo" element={<UseMemo />}></Route>
       </Routes>
     </div>
   );

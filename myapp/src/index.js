@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import {Toaster} from "react-hot-toast"
 import ParentAuthComponent from "./component/context/AuthContext";
+import ParentComponentDarkMode from "./component/05-09(Context)/DarkmodeContext"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,9 +37,11 @@ root.render(
           },
         }}
       />
+      <ParentComponentDarkMode>
       <ParentAuthComponent>
       <App />
       </ParentAuthComponent>
+      </ParentComponentDarkMode>
     </BrowserRouter>
   </React.StrictMode>
 );

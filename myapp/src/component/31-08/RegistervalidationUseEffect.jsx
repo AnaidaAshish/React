@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import "../Styles/RegisterValidations.css";
+import "../Styles/RegisterUseEffect.css";
 
 function RegisterValidationEffect() {
   const router = useNavigate();
