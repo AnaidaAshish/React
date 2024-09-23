@@ -12,6 +12,12 @@ function Navbar() {
   function redirectToRegister() {
     router("/register");
   }
+  function redirectToCounter(){
+    router("/counter")
+  }
+  const redirectToWeather=()=>{
+    router("/weather");
+  }
   // function redirectToCounter() {
   //   router("/counter");
   // }
@@ -33,7 +39,10 @@ function Navbar() {
     <div className="parentDiv">
       <h1 onClick={redirectToHome}>Home</h1>
       <h1 onClick={redirectToLogin}>Login</h1>
+      <h1 onClick={redirectToWeather}>Weather</h1>
       <h1 onClick={redirectToRegister}>Register</h1>
+      <h1 onClick={redirectToCounter}> Counter</h1>
+      
       {/* <h1 onClick={redirectToCounter}>Counter</h1> */}
       {/* <h1 onClick={redirectToUseEffect1}>UseEffect1</h1>
       <h1 onClick={redirectToUseEffect2}>UseEffect2</h1>

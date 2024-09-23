@@ -25,6 +25,11 @@ import UseReducer from "./component/01-09/UseReducer";
 import UseContext from "./component/03-09/UseContext";
 import UseMemo from "./component/05-09(Context)/UseMemo";
 import Memo from "./component/10-09(Memo)/Memo";
+import UseCallBack from "./component/12-09/UseCallBack";
+import UseRef from "./component/15/09/UseRef";
+import AllProducts from "./component/14-09/AllProducts";
+import ReduxCounter from "./component/19-09/ReduxCounter";
+import Weather from "./component/Weather/index"
 
 function App() {
   const [productName, setproductName] = useState([
@@ -83,6 +88,11 @@ function App() {
         <Route path="/use-context" element={<UseContext />}></Route>
         <Route path="/use-memo" element={<UseMemo />}></Route>
         <Route path="/memo" element={<Memo />}></Route>
+        <Route path="/use-callback" element={<UseCallBack/>}></Route>
+        <Route path="/all-products" element={<AllProducts/>}></Route>
+        <Route path="/use-ref" element={<UseRef/>}></Route>
+        <Route path="/redux" element={<ReduxCounter/>}></Route>
+        <Route path="/weather" element={<Weather/>}></Route>
       </Routes>
     </div>
   );

@@ -5,5 +5,5 @@ const UseContext = () => {
     <div>UseContext</div>
   )
 }
-
+//redirect to home page
 export default UseContext

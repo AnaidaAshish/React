@@ -7,10 +7,13 @@ import { BrowserRouter } from "react-router-dom";
 import {Toaster} from "react-hot-toast"
 import ParentAuthComponent from "./component/context/AuthContext";
 import ParentComponentDarkMode from "./component/05-09(Context)/DarkmodeContext"
+import {Provider} from 'react-redux'
+import store from "./component/redux/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
       <Toaster
         position="top-center"
@@ -43,7 +46,8 @@ root.render(
       </ParentAuthComponent>
       </ParentComponentDarkMode>
     </BrowserRouter>
-  </React.StrictMode>
+    </Provider>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

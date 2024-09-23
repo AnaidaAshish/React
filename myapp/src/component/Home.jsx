@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div>
-      Home - useContext <h1>counter : {state?.counter}</h1>
+      Home - useContext <h1>counter : {state.counter}</h1>
       <button onClick={Increment}>+</button> 
       <button onClick={Decrement}>-</button>
     </div>

@@ -3,7 +3,7 @@ import AnotherComponent from "./AnotherComponent";
 
 function Memo() {
   const [counter, setCounter] = useState(10);
-  const [counter2, setCounter2] = useState(1000000000);
+  const [counter2, setCounter2] = useState(1009990);
   function AddNumber() {
     setCounter(counter + 1);
   }

@@ -99,7 +99,7 @@ const Mapping2 = () => {
               src={itemDetails.image}
             />
             <p><b>Name</b> - {itemDetails.name}</p>
-            <p><b>Name</b> - {itemDetails.price}</p>
+            <p><b>Price</b> - {itemDetails.price}</p>
             <p><b>Size</b> - {itemDetails.size}</p>
           </div>
         ))}
