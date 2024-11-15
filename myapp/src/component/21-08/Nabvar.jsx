@@ -1,8 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "../Styles/Navbar.css";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 
 function Navbar() {
   const router = useNavigate();
+  const {state}=useContext(AuthContext)
+
   function redirectToHome() {
     router("/");
   }
@@ -15,9 +19,9 @@ function Navbar() {
   function redirectToCounter(){
     router("/counter")
   }
-  const redirectToWeather=()=>{
-    router("/weather");
-  }
+  // const redirectToWeather=()=>{
+  //   router("/weather");
+  // }
   // function redirectToCounter() {
   //   router("/counter");
   // }
@@ -39,7 +43,8 @@ function Navbar() {
     <div className="parentDiv">
       <h1 onClick={redirectToHome}>Home</h1>
       <h1 onClick={redirectToLogin}>Login</h1>
-      <h1 onClick={redirectToWeather}>Weather</h1>
+      {state?.user?.name && <h1>welcome : {state?.user?.name}</h1>}
+      {/* <h1 onClick={redirectToWeather}>Weather</h1> */}
       <h1 onClick={redirectToRegister}>Register</h1>
       <h1 onClick={redirectToCounter}> Counter</h1>
       

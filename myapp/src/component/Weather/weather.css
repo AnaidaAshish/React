@@ -1,0 +1,30 @@
+.parent{
+   background-color: #CCCCFF;
+   margin-left: 600px;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 23%;
+    /* background-image: url(https://img.freepik.com/free-photo/view-3d-cloud_23-2151113470.jpg); */
+    /* background-repeat: none; */
+    /* margin-top: 20px; */
+}
+.inptAndBtn{
+    display: flex;
+}
+.input{
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin-right: 5px;
+    /* height: 40px; */
+}
+.btn{
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+.outputs{
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

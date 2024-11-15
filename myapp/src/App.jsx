@@ -30,6 +30,10 @@ import UseRef from "./component/15/09/UseRef";
 import AllProducts from "./component/14-09/AllProducts";
 import ReduxCounter from "./component/19-09/ReduxCounter";
 import Weather from "./component/Weather/index"
+import CreateProduct from "./component/E-commerce/CreateProduct";
+import Viewproducts from "./component/E-commerce/Viewproducts";
+import Product from "./component/E-commerce/Product";
+
 
 function App() {
   const [productName, setproductName] = useState([
@@ -55,7 +59,7 @@ function App() {
         <Route path="/useeffect2" element={<UseEffect2 />}></Route>
         <Route path="/useeffect3" element={<UseEffect3 />}></Route>
         <Route path="/useeffect4" element={<UseEffect4 />}></Route>
-        <Route path="/product/:id" element={<UseParams />}></Route>
+        {/* <Route path="/product/:id" element={<UseParams />}></Route> */}
         <Route
           path="/propdrilling"
           element={
@@ -93,6 +97,10 @@ function App() {
         <Route path="/use-ref" element={<UseRef/>}></Route>
         <Route path="/redux" element={<ReduxCounter/>}></Route>
         <Route path="/weather" element={<Weather/>}></Route>
+
+          <Route path="/create-product" element={<CreateProduct/>}/>   
+          <Route path="/view-products" element = {<Viewproducts/>}/>
+          <Route path="/product/:productId" element={<Product/>}/>
       </Routes>
     </div>
   );
