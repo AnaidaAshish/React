@@ -32,11 +32,12 @@ function CreateProduct() {
       productData.productQuantity
     ) {
       try {
+        console.log("User ID from state:", state?.user?.userId);
         let response = await api.post("/product/create-product", {
           productData,
           userId: state?.user?.userId,
         });
-
+        
         if (response.data.success) {
           toast.success(response.data.message);
           router("/view-products");
