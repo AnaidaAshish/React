@@ -24,7 +24,7 @@ function Login() {
     if (Object.keys(errors).length === 0) {
       if (userData.email && userData.password) {
         try {
-          let response = await api.post("/auth/login", { userData });
+          let response = await api.post("/auth/login",  userData );
 
           if (response.data.success) {
             dispatch({ type: "LOGIN", payload: response.data.userData });
