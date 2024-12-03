@@ -35,7 +35,9 @@ function Login() {
           }
         } catch (error) {
           console.log(error);
-          toast.error(error.response.data.message);
+          const errorMessage =
+    error.response?.data?.message || "An unexpected error occurred.";
+          toast.error(errorMessage);
         }
       } else {
         toast.error("All fields are required");
