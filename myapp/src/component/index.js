@@ -4,7 +4,7 @@ let currentBackendUrl="";
 if(currentMode==="PROD"){
     currentBackendUrl="https://nodejs-uqkf.onrender.com/api/v1";
 }else if(currentMode==="NONPROD"){
-    currentBackendUrl="https://nodejs-uqkf.onrender.com/api/v1";
+    currentBackendUrl= "https://nodejs-uqkf.onrender.com/api/v1";
 }else{
     currentBackendUrl="http://localhost:8000/api/v1";
 }
