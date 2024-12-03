@@ -16,9 +16,9 @@ function Navbar() {
   function redirectToRegister() {
     router("/register");
   }
-  function redirectToCounter(){
-    router("/counter")
-  }
+  // function redirectToCounter(){
+  //   router("/counter")
+  // }
   // const redirectToWeather=()=>{
   //   router("/weather");
   // }
@@ -39,6 +39,13 @@ function Navbar() {
   //   router("/useeffect4");
   // }
 
+const redirectToCreateProducts = () =>{
+  router("/create-product")
+}
+
+const redirectToViewProducts = () =>{
+  router("/view-products")
+}
   return (
     <div className="parentDiv">
       <h1 onClick={redirectToHome}>Home</h1>
@@ -46,7 +53,8 @@ function Navbar() {
       {state?.user?.name && <h1>welcome : {state?.user?.name}</h1>}
       {/* <h1 onClick={redirectToWeather}>Weather</h1> */}
       <h1 onClick={redirectToRegister}>Register</h1>
-      <h1 onClick={redirectToCounter}> Counter</h1>
+      <h1 onClick={redirectToCreateProducts}> Create Product</h1>
+      <h1 onClick={redirectToViewProducts}> View Product</h1>
       
       {/* <h1 onClick={redirectToCounter}>Counter</h1> */}
       {/* <h1 onClick={redirectToUseEffect1}>UseEffect1</h1>
