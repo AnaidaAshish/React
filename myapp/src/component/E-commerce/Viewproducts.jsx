@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import api from "..";
-import "./viewproducts.css";
+import "../E-commerce/Viewproducts.css";
 import { useNavigate } from "react-router-dom";
 
 const Viewproducts = () => {

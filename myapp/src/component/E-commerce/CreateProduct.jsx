@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import api from "..";
 import { AuthContext } from "../context/AuthContext";
+import "../E-commerce/CreateProduct.css"
 
 function CreateProduct() {
   const router = useNavigate();
