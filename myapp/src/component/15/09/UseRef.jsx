@@ -1,4 +1,4 @@
-//useRef hook stops the component from re-rendering and stores the value in JS's memory and when the component renders(because of a state) shows us the latest value of the Counter.It won't show us the value each and everytime the value of counter increases but when a state changes and renders the component then the useRef shows us the updated valu.
+//useRef hook stops the component from re-rendering and stores the value in JS's memory and when the component renders(because of a state) shows us the latest value of the Counter.It won't show us the value each and everytime the value of counter increases but when a state changes and renders the component then the useRef shows us the updated value.
 
 import React, { useRef, useState } from "react";
 
@@ -25,3 +25,5 @@ const UseRef = () => {
 };
 
 export default UseRef;
+
+

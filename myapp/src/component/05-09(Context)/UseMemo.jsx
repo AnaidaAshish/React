@@ -1,4 +1,4 @@
-// 
+//
 import React, { useMemo, useState } from "react";
 
 const UseMemo = () => {
@@ -14,7 +14,7 @@ const UseMemo = () => {
   }, [counter]);
   return (
     <div>
-      <h2>Heavy calculated Counter : {CalcuatedValueFromHeavyCalculations}</h2>
+      {/* <h2>Heavy calculated Counter : {CalcuatedValueFromHeavyCalculations}</h2> */}
       <h1>Counter : {counter}</h1>
       <button onClick={() => setCounter(counter + 1)}>+</button>
       {todos.map((todo) => (
@@ -27,7 +27,6 @@ const UseMemo = () => {
 
 function HeavyCalculations(counter) {
   console.log("calculations started.");
-  var newValue = 0;
   for (let i = 1; i < 1000000000; i++) {
     counter += i;
   }

@@ -10,7 +10,7 @@ function Register() {
   const router=useNavigate()
   const [userData, setUserData] = useState({
     name: "",
-    email: "",
+    email: "",   
     password: "",
     confirmPassword: "",
   });
