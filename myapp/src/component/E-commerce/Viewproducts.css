@@ -1,4 +1,4 @@
-/* viewproducts.css
+viewproducts.css
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -61,9 +61,9 @@ body {
   .product-card b {
     color: #333;
   }
-   */
+  
 
-body {
+/* body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f7f6;
   margin: 0;
@@ -120,16 +120,14 @@ h3 {
   color: #777;
 }
 
-/* media query table */
 @media (max-width: 768px) {
   .product-card {
       width: 48%;
   }
 }
 
-/* phone */
 @media (max-width: 480px) {
   .product-card {
       width: 100%;
   }
-}
+} */

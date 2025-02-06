@@ -1,4 +1,4 @@
-/* createproduct.css
+createproduct.css
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -51,8 +51,8 @@ body {
   .button:hover {
     background-color: #218838;
   }
-   */
-body {
+  
+/* body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f7f6;
   margin: 0;
@@ -102,4 +102,4 @@ body {
 
 .form .button:hover {
   background-color: #218838;
-}
+} */
