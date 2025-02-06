@@ -50,7 +50,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        {/* <Route path="/" element={<Home />}></Route> */}
         <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<Not_found />}></Route>
         <Route path="/register" element={<Register />}></Route>
@@ -99,7 +99,7 @@ function App() {
         <Route path="/weather" element={<Weather/>}></Route>
 
           <Route path="/create-product" element={<CreateProduct/>}/>   
-          <Route path="/view-products" element = {<Viewproducts/>}/>
+          <Route path="/" element = {<Viewproducts/>}/>
           <Route path="/product/:productId" element={<Product/>}/>
       </Routes>
     </div>
