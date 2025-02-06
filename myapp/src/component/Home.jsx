@@ -1,24 +1,9 @@
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import Viewproducts from "./E-commerce/Viewproducts";
 
 function Home() {
-  const { state, dispatch } = useContext(AuthContext);
-  console.log(state, "state");
-
-  function Increment() {
-    dispatch({ type: "INCREMENT" });
-  }
-  function Decrement(){
-    dispatch({ type : "DECREMENT"})
-  }
-
-  return (
-    <div>
-      Home - useContext <h1>counter : {state?.user?.name}</h1>
-      <button onClick={Increment}>+</button> 
-      <button onClick={Decrement}>-</button>
-    </div>
-  );
+  <Viewproducts/>
 }
 
 export default Home;
