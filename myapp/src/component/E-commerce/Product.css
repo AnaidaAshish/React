@@ -1,4 +1,4 @@
-/* product.css */
+/* product.css
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -33,4 +33,37 @@ body {
   .product-details b {
     color: #333;
   }
-  
+   */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.product-details {
+  width: 60%;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-details img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.product-details b {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #555;
+}

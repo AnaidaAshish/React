@@ -1,4 +1,4 @@
-/* login.css */
+/* login.css
 .body {
     display: flex;
     justify-content: center;
@@ -54,4 +54,62 @@
   .login-button:hover {
     background-color: #0056b3;
   }
-  
+   */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.form-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-form .input-wra {
+  margin-bottom: 15px;
+}
+
+.label-name {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}

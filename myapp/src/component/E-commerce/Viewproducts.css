@@ -1,4 +1,4 @@
-/* viewproducts.css */
+/* viewproducts.css
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -61,4 +61,75 @@ body {
   .product-card b {
     color: #333;
   }
-  
+   */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h3 {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 22%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f4f7f6;
+}
+
+.product-card .details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card b {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* media query table */
+@media (max-width: 768px) {
+  .product-card {
+      width: 48%;
+  }
+}
+
+/* phone */
+@media (max-width: 480px) {
+  .product-card {
+      width: 100%;
+  }
+}
